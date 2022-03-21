@@ -1,0 +1,52 @@
+📌|Banir:
+$nomention
+$title[✅|Usuário Banido]
+$description[
+🔰 | Banido Por:<@$authorID>
+👤 | Usuário Banido:<@$mentioned[1]>
+📋 | Motivo:$noMentionMessage
+🆔️ | ID:$mentioned[1]]
+$color[$random[0;999999]]
+$onlyIf[!=$mentioned[1];❌ | <@$authorID> Mencione Alguém!]
+$argsCheck[>2;❌ | <@$authorID> Coloque O Motivo Do Banimento!]
+$onlyIf[$mentioned[1]!=$authorID;❌ | <@$authorID> Você Não Pode Se Mencionar!]
+$onlyAdmin[❌ | <@$authorID> Você Não Tem Permissão Para Executar Esse Comando!]
+$footer[Sistema]
+$footerIcon[$authorAvatar]
+$ban
+$addTimestamp
+
+
+📌|Desbanir:
+$nomention
+$title[❌|Usuário Desbanido]
+$description[
+🔰 | Desbanido Por:<@$authorID>
+👤 | Usuário Desbanido:<@$noMentionMessage[1]>]
+$color[$random[0;999999]]
+$argsCheck[>1;❌ | <@$authorID> Mencione O ID De Um Usuário Banido!]
+$argsCheck[>1;❌ | <@$authorID> Coloque O ID De Um Usuário Banido Para Desbanir!]
+$onlyAdmin[❌ | <@$authorID> Você Não Tem Permissão Para Executar Esse Comando!]
+$footer[Sistema]
+$footerIcon[$authorAvatar]
+$unban
+$addTimestamp
+
+
+📌|Kick:
+$nomention
+$title[✅|Usuário Expulso]
+$description[
+🔰 | Expulso Por:<@$authorID>
+👤 | Usuário Expulso<@$mentioned[1]>
+📋 | Motivo:$noMentionMessage
+🆔️ | ID:$mentioned[1]]
+$color[$random[0;999999]]
+$onlyIf[!=$mentioned[1];❌ | <@$authorID> Mencione Alguém!]
+$argsCheck[>2;❌ | <@$authorID> Coloque O Motivo Do Expulsamento!]
+$onlyIf[$mentioned[1]!=$authorID;❌ | <@$authorID> Você Não Pode Se Mencionar!]
+$onlyAdmin[❌ | <@$authorID> Você Não Tem Permissão Para Executar Esse Comando!]
+$footer[Sistema]
+$footerIcon[$authorAvatar]
+$kick
+$addTimestamp
