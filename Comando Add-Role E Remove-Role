@@ -1,0 +1,38 @@
+📌|Add-Role:
+$nomention
+$title[✅|Cargo Adicionado]
+$description[
+🔰 | Dado Por:<@$authorID>
+👤 | Cargo Dado Para:<@$mentioned[1]>
+💼 | Cargo:<@&$mentionedRoles[1]>]
+$color[$random[0;999999]]
+$suppressErrors[❌ | Algo Deu Errado,Verifique Se O Meu Cargo Está Acima Do Qual Você Quer Adicionar!]
+$onlyIf[!=$mentioned[1];❌ | <@$authorID> Mencione Alguém!]
+$onlyIf[!=$mentionedRoles[1];❌ | <@$authorID> Mencione Um Cargo!]
+$onlyIf[$mentioned[1]!=$authorID;❌ | <@$authorID> Você Não Pode Se Mencionar!]
+$onlyPerms[manageroles;❌ | <@$authorID> Você Não Tem Permissão De Gerenciar Cargo Para Executar Esse Comando!]
+$onlyBotPerms[manageroles;❌ | <@$authorID> Eu Não Tenho Permissão De Gerenciar Cargo Para Executar Esse Comando!]
+$giveRole[$mentioned[1];$mentionedRoles[1]]
+$footer[Sistema]
+$footerIcon[$authorAvatar]
+$addTimestamp
+
+
+📌|Remove-Role:
+$nomention
+$title[❌|Cargo Removido]
+$description[
+🔰 | Removido Por:<@$authorID>
+👤 | Cargo Removido De:<@$mentioned[1]>
+💼 | Cargo:<@&$mentionedRoles[1]>]
+$color[$random[0;999999]]
+$suppressErrors[❌ | Algo Deu Errado,Verifique Se O Meu Cargo Está Acima Do Qual Você Quer Remover!]
+$onlyIf[!=$mentioned[1];❌ | <@$authorID> Mencione Alguém!]
+$onlyIf[!=$mentionedRoles[1];❌ | <@$authorID> Mencione Um Cargo!]
+$onlyIf[$mentioned[1]!=$authorID;❌ | <@$authorID> Você Não Pode Se Mencionar!]
+$onlyPerms[manageroles;❌ | <@$authorID> Você Não Tem Permissão De Gerenciar Cargo Para Executar Esse Comando!]
+$onlyBotPerms[manageroles;❌ | <@$authorID> Eu Não Tenho Permissão De Gerenciar Cargo Para Executar Esse Comando!]
+$takeRole[$mentioned[1];$mentionedRoles[1]]
+$footer[Sistema]
+$footerIcon[$authorAvatar]
+$addTimestamp
