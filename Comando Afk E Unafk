@@ -1,3 +1,10 @@
+🔎|Crie Uma Variável:
+Nome:AFK
+Valor:Desligado
+
+ℹ️|Coloque Isso Em Baixo Em Todos Os Comandos Do Seu Bot:
+$setUserVar[AFK;Desligado]
+
 📌|Afk:
 $nomention
 $title[✅|AFK Ligado]
@@ -33,10 +40,3 @@ $footerIcon[$authorAvatar]
 $footer[Sistema]
 $onlyIf[$getUserVar[AFK;$mentioned[1]]==Ligado;]
 $onlyIf[$mentioned[1]!=$authorID;]
-
-🔎|Crie Uma Variável:
-Nome:AFK
-Valor:Desligado
-
-ℹ️|Para O Comando Funcionar 
-
