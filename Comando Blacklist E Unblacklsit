@@ -2,6 +2,9 @@
 Nome:Blacklist
 Valor:Desligado
 
+ℹ️|Coloque Isso Em Baixo Em Todos Os Comandos Do Seu Bot:
+$onlyIf[$getUserVar[Blacklist]==Desligado;:x: | <@$authorID> Você Está Na Blacklist E Não Pode Usar Meus Comandos!]
+
 📌|Blacklist:
 $nomention
 $title[✅|Usuário Adicionado À Blacklist]
