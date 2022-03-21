@@ -1,0 +1,9 @@
+📌|Avatar:
+$nomention
+$title[🖼|Avatar]
+$description[ℹ️|[Clique Aqui]($userAvatar[$mentioned[1]]) Para Baixar A Imagem!]
+$onlyIf[!=$mentioned[1];:x: | <@$authorID> Mencione Alguém!]
+$image[$userAvatar[$mentioned[1]]?size=2048]
+$footer[Sistema]
+$footerIcon[$authorAvatar]
+$color[$random[0;999999]]
