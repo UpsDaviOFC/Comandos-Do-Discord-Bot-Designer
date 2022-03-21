@@ -1,0 +1,42 @@
+📌|Afk:
+$nomention
+$title[✅|AFK Ligado]
+$description[
+ℹ️|<@$authorID> Você Ligou O Seu AFK,E Não Pode Mais Ser Mencionado!
+⚠️|Se Você Usar Um Comando Meu O Seu AFK Desligará!]
+$color[$random[0;999999]]
+$addTimestamp
+$setUserVar[AFK;Ligado]
+$onlyIf[$getUserVar[AFK]==Desligado;:x: | <@$authorID> Você Já Ligou Seu AFK!]
+$footerIcon[$authorAvatar]
+$footer[Sistema]
+
+📌|Unafk:
+$nomention
+$title[❌|AFK Desligado]
+$description[ℹ️|<@$authorID> Você Desligou O Seu AFK,E Agora Pode Ser Mencionado!]
+$color[$random[0;999999]]
+$addTimestamp
+$setUserVar[AFK;Desligado]
+$onlyIf[$getUserVar[AFK]==Ligado;:x: | <@$authorID> Você Já Desligou Seu AFK!]
+$footer[Sistema]
+$footerIcon[$authorAvatar]
+
+📌|Função AFK:
+⚙️|Prefíxo:<@
+$nomention
+$title[💤|Dormindo...]
+$description[ℹ️|<@$authorID> O Usuário <@$mentioned[1]> Agora Está AFK E Não Quer Ser Mencionado!]
+$color[$random[0;999999]]
+$addTimestamp
+$footerIcon[$authorAvatar]
+$footer[Sistema]
+$onlyIf[$getUserVar[AFK;$mentioned[1]]==Ligado;]
+$onlyIf[$mentioned[1]!=$authorID;]
+
+🔎|Crie Uma Variável:
+Nome:AFK
+Valor:Desligado
+
+ℹ️|Para O Comando Funcionar 
+
