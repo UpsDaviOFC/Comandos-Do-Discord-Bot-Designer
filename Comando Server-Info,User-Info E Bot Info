@@ -1,0 +1,102 @@
+⚙️|Coloque A Linguagem De Todos Os Comandos Para:BDScript2
+
+📌|Server Info:
+$nomention
+$title[ℹ️|Informações Do Servidor]
+$serverInfo[
+🏠 | Nome Do Servidor:
+$serverName[$guildID]
+
+👑 | Dono:
+$username[$serverOwner]#$discriminator[$serverOwner]
+
+$textSplit[$creationDate[$guildID];-]
+⚒️ | Data De Criação:
+$splitText[3] De $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$splitText[2];01;Janeiro;-1];02;Fevereiro;-1];03;Março;-1];04;Abril;-1];05;Maio;-1];06;Junho;-1];07;Julho;-1];08;Agosto;-1];09;Setembro;-1];10;Outubro;-1];11;Novembro;-1];12;Dezembro;-1] De $splitText[1]
+
+🤪 | Emojis:
+{emoji}
+
+🆔 | ID Do Servidor:
+{ID}
+
+💼 | Quantidade De Cargos:
+$roleCount
+🗂 | Cargos:
+```$roleNames```
+
+💬 | Quantidade De Canais:
+$channelCount
+
+👤 | Quantidade De Usuários:
+$membersCount]
+$addTimestamp
+$color[$random[0;999999]]
+$footer[Sistema]
+$footerIcon[$authorAvatar]
+$thumbnail[$serverIcon]
+
+📌|User Info:
+$nomention
+$onlyIf[!=$mentioned[1];:x: | <@$authorID> Mencione Alguém!]
+$title[ℹ️|Informações De Usuário]
+$userInfo[
+🏠 | Nome:
+{username}
+
+🤖 | Bot?:
+$replaceText[$replaceText[$isBot[$mentioned[1]];false;Não;1];true;Sim;1]
+
+🔰 | Admin?:
+$replaceText[$replaceText[$isAdmin[$mentioned[1]];false;Não;1];true;Sim;1]
+
+📤 | DM Aberta?:
+$replaceText[$replaceText[$isUserDMEnabled[$mentioned[1]];false;Não;1];true;Sim;1]
+
+💤 | AFK:
+$getUserVar[AFK;$mentioned[1]]
+
+$textSplit[$creationDate[$mentioned[1]];-]
+⚒️ | Data De Criação Da Conta:
+$splitText[3] De $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$splitText[2];01;Janeiro;-1];02;Fevereiro;-1];03;Março;-1];04;Abril;-1];05;Maio;-1];06;Junho;-1];07;Julho;-1];08;Agosto;-1];09;Setembro;-1];10;Outubro;-1];11;Novembro;-1];12;Dezembro;-1] De $splitText[1]
+
+$textSplit[$userJoined[$mentioned[1]];-]
+🚪 | Entrou No Servidor Em:
+$splitText[3] De $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$splitText[2];01;Janeiro;-1];02;Fevereiro;-1];03;Março;-1];04;Abril;-1];05;Maio;-1];06;Junho;-1];07;Julho;-1];08;Agosto;-1];09;Setembro;-1];10;Outubro;-1];11;Novembro;-1];12;Dezembro;-1] De $splitText[1]
+
+🆔 | ID Do Usuário:
+{ID}]
+$addTimestamp
+$color[$random[0;999999]]
+$footer[Sistema]
+$footerIcon[$authorAvatar]
+$thumbnail[$userAvatar[$mentioned[1]]]
+$onlyIf[$mentioned[1]!=$authorID;:x: | <@$authorID> Você Não Pode Se Mencionar!]
+
+📌|Bot Info:
+$nomention
+$title[ℹ️|Minhas Informações]
+$description[
+🏠 | Meu Nome:
+<@$botID>
+
+🔧 | Meu Criador:
+Seu Nome
+
+$textSplit[$creationDate[$botID];-]
+⚒️ | Minha Data De Criação:
+$splitText[3] De $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$splitText[2];01;Janeiro;-1];02;Fevereiro;-1];03;Março;-1];04;Abril;-1];05;Maio;-1];06;Junho;-1];07;Julho;-1];08;Agosto;-1];09;Setembro;-1];10;Outubro;-1];11;Novembro;-1];12;Dezembro;-1] De $splitText[1]
+
+🌐 | Linguagem:
+PT_BR
+
+⚙️ | Linguagem De Programação:
+BDScript
+
+🗺 | Quantidade De Servisores Habitados:
+$serverCount]
+$addButton[no;$getBotInvite;Adicionar;link;no;✉️]
+$color[$random[0;999999]]
+$footer[Sistema]
+$footerIcon[$authorAvatar]
+$addTimestamp
