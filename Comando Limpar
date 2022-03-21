@@ -1,0 +1,17 @@
+$nomention
+$suppressErrors
+$onlyPerms[managemessages;:x: | <@$authorID> Você Não Tem A Permissão De Gerenciar Mensagens Para Executar Esse Comando!]
+$onlyIf[$message>0;:x: | <@$authorID> Insira Um Número Acima De 0!]
+$onlyIf[$message<=100;:x: | <@$authorID> Eu Só Consigo Apagar Até 100 Mensagens!]
+$onlyIf[$message!=;:x: | <@$authorID> Insira Um Número De 1 A 100 Mensagens Para Apagar!]
+$title[:broom:|Limpeza]
+$color[$random[0;999999]]
+$description[
+🧹 | Faxineiro:<@$authorID>
+♻️ | Limpos:$message Mensagens]
+$footer[Sistema]
+$footerIcon[$authorAvatar]
+$addTimestamp
+$clear 
+$deletecommand
+$onlyIf[$isNumber[$noMentionMessage[1]]==true;:x: | <@$authorID> Digite Apenas Números!]
