@@ -2,7 +2,7 @@
 $nomention
 $title[✅|Canal Trancado]
 $description[ℹ️|<@$authorID> Fechou Esse Canal!]
-$onlyAdmin[❌ | Apenas Admins Podem Usar Esse Comando!]
+$onlyAdmin[❌ | Apenas Admins Podem Executar Esse Comando!]
 $modifyChannelPerms[$channelID;-sendmessages;$guildID]
 $color[$random[0;99999]]
 $addTimestamp
@@ -13,7 +13,7 @@ $footer[Sistema]
 $nomention
 $title[❌|Canal Destrancado]
 $description[ℹ️|<@$authorID> Reabriu Esse Canal!]
-$onlyAdmin[❌ | Apenas Admins Podem Usar Esse Comando!]
+$onlyAdmin[❌ | Apenas Admins Podem Executar Esse Comando!]
 $modifyChannelPerms[$channelID;+sendmessages;$guildID]
 $color[$random[0;99999]]
 $addTimestamp
